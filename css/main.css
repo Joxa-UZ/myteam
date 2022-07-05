@@ -205,7 +205,7 @@ a{
   height: 200px;
   background-image: url("../images/hero-bottom.svg");
   content: "";
-
+}
 .build{
   padding-top: 140px;
   padding-bottom: 140px;
