@@ -90,6 +90,7 @@ a{
   flex-grow: 1;
 }
 
+
 .site-header{
   padding-top: 73px;
   background-color: var(--color-midnight-green); 
@@ -204,4 +205,82 @@ a{
   height: 200px;
   background-image: url("../images/hero-bottom.svg");
   content: "";
+
+.build{
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color: var(--color-sacramento-state-green);
+  background-image: url(../images/build.svg);
+  background-position: calc(50% + 690px) calc(50% + 190px);
+  background-repeat: no-repeat;
+  
+}
+.build__box{
+  display: flex;
+  justify-content: space-between;
+}
+.build__themebox{
+  position: relative;
+  width: 445px;
+}
+.build__themebox::before{
+  position: absolute;
+  top: -54px;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: var(--color-light-coral);
+}
+.build__theme{
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: var(--text-color-white);
+}
+.build__item{
+  display: flex;
+  margin-bottom: 32px;
+  /* align-items: center; */
+  /* width: 445px; */
+}
+.build__item:last-child{
+  margin-bottom: 0;
+}
+.build__itembox{
+  width: 445px;
+}
+.build__item::before{
+  content: "";
+  display: block;
+  margin-right: 23px;
+  background-image: url(../images/experiences-img.svg);
+  /* background-position: calc(50% - 30px) calc(50%); */
+  background-repeat: no-repeat;
+  width: 72px;
+  height: 72px;
+}
+.build__item:nth-child(2)::before{
+  background-image: url(../images/easy-img.svg);
+}
+.build__item:nth-child(3)::before{
+  background-image: url(../images/enhanced-img.svg);
+}
+.build__minitheme{
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-light-coral);
+}
+.build__minitext{
+  margin: 0;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--text-color-white);
+  opacity: 0.8;
+
 }
