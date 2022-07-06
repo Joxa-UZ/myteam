@@ -176,3 +176,113 @@ a{
   font-style: italic;
   color: var(--text-color-white);
 }
+.site-article{
+  padding: 76px 0px;
+  background-color: var(--color-light-coral);
+  background-image: url(../images/ready-to-started-bg.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% - 575px) calc(50% + 80px);
+}
+.site-article__box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.site-article__theme{
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: var(--color-sacramento-state-green);
+}
+.site-article__link{
+  padding: 10px 32px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-sacramento-state-green);
+  border: 2px solid #012F34;
+  border-radius: 24px;
+}
+.site-article__link:hover{
+  border: 2px solid transparent;
+  color: var(--text-color-white);
+  background-color: var(--color-sacramento-state-green);
+}
+.site-article__link:active{
+  opacity: 0.5;
+  background-color: transparent;
+  border: 2px solid #012F34;
+}
+
+.site-footer{
+  padding: 48px 0px;
+  background-color: var(--color-dark-green);
+}
+.site-footer__box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-footer__logo{
+  margin-bottom: 25px;
+}
+.site-footer__headerlist{
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  align-items: center;
+}
+.site-footer__headeritemlink{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-color-white);
+}
+.site-footer__headeritemlink:hover{
+  color: var(--color-light-coral);
+}
+
+.site-footer__address{
+  width: 445px;
+  font-style: normal;
+}
+.site-footer__addresstext{
+  margin: 0;
+  font-weight: var(--main-font-weight-text);
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--text-color-white);
+  opacity: 0.6;
+}
+.footer-socials{
+  width: 255px;
+}
+.footer-socials__list{
+  display: flex;
+  width: 104px;
+  margin-left: auto;
+  margin-bottom: 51px;
+  align-items: center;
+}
+.footer-socials__item{
+  margin-right: 16px;
+}
+.footer-socials__item:last-child{
+  margin-right: 0;
+}
+.footer-socials__item> a > svg{
+  color: var(--text-color-white);
+}
+
+.footer-socials__text{
+  margin: 0;
+  font-weight: var(--main-font-weight-text);
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--text-color-white);
+  opacity: 0.6;
+}
+.footer-socials__link > svg:hover{
+  color: var(--color-light-coral);
+}
