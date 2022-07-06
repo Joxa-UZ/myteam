@@ -1,0 +1,142 @@
+/* VARIABLES */
+
+:root{
+    --color-midnight-green : #014e56;
+    --text-color-white: #fff;
+    --color-light-coral: #f67e7e;
+    --color-rapture-blue: #79c8c7;
+    --color-police-blue: #2c6269;
+    --color-deep-jungle-green: #004047;
+    --color-sacramento-state-green: #012f34;
+    --color-dark-green: #002529;
+    --main-font-weight-text : 600;
+    --main-font-weight-bold : 700;
+  }
+  
+  /* livvic-600 - latin */
+  @font-face {
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/livvic-v13-latin-600.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/livvic-v13-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* livvic-700 - latin */
+  @font-face {
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/livvic-v13-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/livvic-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* GENERAL */
+  *{
+    box-sizing: border-box;
+  }
+  html{
+    height: 100%;
+  }
+  
+  img{
+    display: block;
+    height: auto;
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column; 
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    font-family: "Livvic", "Arial", sans-serif;
+    overflow-x: hidden;
+  }
+  
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  /* CONTAINER */
+  
+  .container{
+    max-width: 1150px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  a{
+    display: inline-block;
+    text-decoration: none;
+  }
+  /* STICKY-FOOTER */
+  .site-main{
+    flex-grow: 1;
+  }
+  
+  .site-header{
+    padding-top: 73px;
+    background-color: var(--color-midnight-green); 
+  
+  }
+  
+  .site-header__inner{
+    display: flex;
+    align-items: center;
+  }
+  
+  .site-header__list{
+    display: flex;
+    margin-left: 80px;
+  }
+  
+  .site-header__item{
+    margin-right: 40px;
+  }
+  
+  
+  .site-header__link{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    transition: all 0.4s ease;
+  
+  }
+  
+  .site-header__link:hover{
+    color: var(--color-light-coral);
+  }
+  
+  .site-header__btn{
+    margin-left: auto;
+    padding: 10px 32px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 24px;
+    transition: all 0.4s ease;
+  }
+  
+  .site-header__btn:hover{
+    background-color: #fff;
+    color:var(--color-dark-green)''
+  }  
