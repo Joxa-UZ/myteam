@@ -93,7 +93,7 @@ a{
 .site-header{
   padding-top: 73px;
   background-color: var(--color-midnight-green); 
-
+  
 }
 
 .site-header__inner{
@@ -117,7 +117,7 @@ a{
   line-height: 28px;
   color: #FFFFFF;
   transition: all 0.4s ease;
-
+  
 }
 
 .site-header__link:hover{
@@ -261,7 +261,7 @@ a{
 .directors{
   padding: 140px 0;
   background-color: var(--color-deep-jungle-green);
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 .directors__title{
@@ -303,7 +303,7 @@ a{
   background-image: url("../images/deliver-top-corner-img.svg");
   background-repeat: no-repeat;
   content: "";
-
+  
 }
 
 .directors__item{
@@ -341,7 +341,7 @@ a{
   height: 200px;
   perspective: 1000px; 
   background-color: var(--color-sacramento-state-green);
-
+  
 }
 
 .directors__inner {
@@ -375,7 +375,7 @@ a{
 .directors__back {
   /* color: white; */
   transform: rotateY(180deg);
-
+  
 }
 
 
@@ -419,7 +419,30 @@ a{
   transition: all 0.4s ease;
   cursor: pointer;
 }
-
+.our-clients{
+  padding: 140px 0px;
+  background-color: var(--color-sacramento-state-green);
+  background-image: url(../images/clients-bg.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% - 580px) calc(50% - 120px);
+}
+.our-clients__theme{
+  margin: 0;
+  margin-bottom: 64px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: var(--text-color-white);
+}
+.our-clients__box{
+  
+}
+.our-clients__list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .build{
   padding-top: 140px;
   padding-bottom: 140px;
@@ -496,7 +519,7 @@ a{
   line-height: 25px;
   color: var(--text-color-white);
   opacity: 0.8;
-
+  
 }
 .delivering{
   padding-top: 140px;
