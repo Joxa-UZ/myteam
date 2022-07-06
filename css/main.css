@@ -325,7 +325,27 @@ a{
   margin-right: 0;
 }
 
-.directors__item::after{
+.directors__span{
+  position: absolute;
+  bottom: -25px;
+  left: 143px;
+  /* display: block;  */
+  width: 56px;
+  height: 56px;
+  border-radius:50%;
+  background-color: var(--color-light-coral);
+  transition: transform 0.8s;
+}
+
+.directors__shape{
+  position: absolute;
+  top: 35%;
+  left: 36%;
+  transition: transform 0.8s;
+
+}
+
+/* .directors__item::after{
   position: absolute;
   bottom: -27px;
   right: 42%;
@@ -334,7 +354,7 @@ a{
   background-image: url("../images/dir-ilst-after.svg");
   background-repeat: no-repeat;
   content: "";
-}
+} */
 
 .directors__card {
   width: 300px;
@@ -358,6 +378,18 @@ a{
   transform: rotateY(180deg);
   /* border: 1px solid #2c313b; */
 }
+
+.directors__item:hover .directors__shape {
+  transform: rotate(45deg);
+  transition: transform 0.8s;
+}
+
+.directors__item:hover .directors__span {
+  background-color: var(--color-rapture-blue);
+  transition: transform 0.8s ease;
+}
+
+
 
 .directors__item:hover.directors__item::after{
   transform: rotate(45deg);
